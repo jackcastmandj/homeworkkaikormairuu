@@ -1,0 +1,643 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>บทเรียน 120 นาที</title><style>:root{color-scheme:light;--ink:#18302f;--muted:#536665;--paper:#fff;--accent:#116c63;--wash:#eef6f2;--line:#d9e5df}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#f5f6f2;font-family:"Leelawadee UI","Tahoma",sans-serif;font-size:17px;line-height:1.85}.top{max-width:980px;margin:auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:20px 28px}.top a{font-weight:600}.top button{font:inherit;font-size:14px;background:white;border:1px solid var(--line);border-radius:8px;padding:7px 14px;color:var(--ink);cursor:pointer}main{max-width:980px;margin:0 auto;padding:38px 54px 55px;background:var(--paper);border-top:5px solid var(--accent)}h1{font-size:31px;line-height:1.4;margin:0 0 24px;letter-spacing:-.4px}h2{font-size:23px;line-height:1.5;margin:45px 0 18px;padding-top:15px;border-top:1px solid var(--line);scroll-margin-top:18px}p{margin:15px 0}a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}strong{font-weight:700}table{border-collapse:collapse;width:100%;margin:20px 0;font-size:16px}th,td{padding:12px 11px;vertical-align:top;text-align:left;border-bottom:1px solid var(--line);overflow-wrap:anywhere}th{background:var(--wash);font-weight:600}.equation{max-width:100%;overflow-x:auto;margin:24px 0;padding:9px 0}math{font-family:"Cambria Math","STIX Two Math",serif;font-size:1.13em}mi{font-family:"Cambria Math",serif}li{margin:6px 0}summary{cursor:pointer;font-weight:600;color:var(--accent)}details{padding:15px 18px;background:var(--wash);margin:24px 0}.contents nav{display:grid;gap:6px;margin-top:12px}.contents a{font-size:15px}.answers{background:#f6f8f5}.answers summary{font-size:22px}footer{max-width:980px;padding:25px 28px;margin:auto;font-size:13px;color:var(--muted)}@media(max-width:640px){body{font-size:16px;line-height:1.9}main{padding:25px 18px 40px}h1{font-size:25px}h2{font-size:21px}table{font-size:14px}th,td{padding:9px 6px}.top{padding:14px 18px}.equation{margin:18px 0}math{font-size:1em}ul,ol{padding-left:24px}}@media print{body{background:white;font-size:11pt;line-height:1.65}.top,.contents,footer{display:none}main{border:0;max-width:none;padding:0}h1{font-size:22pt}h2{font-size:15pt;break-after:avoid;page-break-after:avoid;margin-top:25px}p,li{orphans:3;widows:3}table{font-size:10pt}.equation,tr{break-inside:avoid}.equation{overflow:visible}details{padding:0;background:transparent}math{font-size:1em}a{color:inherit}summary{color:inherit}@page{size:A4;margin:16mm}
+</style></head><body><nav class="top"><a href="photo-exercise-solutions.html">เฉลยโจทย์จากภาพ →</a><button type="button" onclick="document.querySelectorAll('details').forEach(d=>d.open=true);window.print()">พิมพ์ / บันทึก PDF</button></nav><main><h1>เมทริกซ์และตรรกศาสตร์ — เรียนเป็นขั้นใน 120 นาที</h1><details class="contents"><summary>สารบัญ • เลือกช่วงที่ต้องการ</summary><nav><a href="#part-1">เส้นทาง 120 นาที</a><a href="#part-2">ช่วงที่ 1 • นาที 0–10 • เมทริกซ์คืออะไร</a><a href="#part-3">ช่วงที่ 2 • นาที 10–22 • บวก ลบ คูณค่าคงตัว และ transpose</a><a href="#part-4">ช่วงที่ 3 • นาที 22–37 • คูณเมทริกซ์</a><a href="#part-5">ช่วงที่ 4 • นาที 37–55 • ดีเทอร์มิแนนต์และโคแฟกเตอร์</a><a href="#part-6">ช่วงที่ 5 • นาที 55–68 • อินเวอร์สและสูตรลัด det</a><a href="#part-7">ช่วงที่ 6 • นาที 68–82 • ระบบสมการและกฎคราเมอร์</a><a href="#part-8">ช่วงที่ 7 • นาที 82–100 • ตรรกศาสตร์และการอ้างเหตุผล</a><a href="#part-9">ช่วงที่ 8 • นาที 100–108 • ตัวบ่งปริมาณ</a><a href="#part-10">ช่วงที่ 9 • นาที 108–120 • แบบทดสอบปิดเฉลย ข้อ 1–10</a><a href="#part-11">แบบฝึกเสริม ข้อ 11–20 • หลังรอบ 120 นาที</a><a href="#part-12">เฉลยแบบฝึกใหม่ • เปิดหลังลองทำ</a><a href="#part-13">แผ่นจำก่อนทำข้อสอบ</a></nav></details>
+<p>คู่มือสอนจากภาพที่ส่งมา • ระดับ ม.4 • พร้อมตัวอย่าง แบบฝึกหัดใหม่ 20 ข้อ และเฉลย</p>
+<p>เป้าหมายของ 2 ชั่วโมงนี้คือ อ่านโจทย์ออก เลือกวิธีได้ และทำโจทย์พื้นฐานของแต่ละเรื่องด้วยตัวเองได้ ความคล่องขึ้นกับพื้นฐานเดิม จึงมีจุดตรวจระหว่างเรียนให้รู้ทันทีว่าควรย้อนตรงไหน</p>
+<p>เตรียมกระดาษ ปากกา และนาฬิกาจับเวลา ทุกครั้งที่เห็นคำว่า “ลองเอง” ให้หยุดอ่านแล้วลงมือก่อน คำตอบอยู่ท้ายช่วงนั้น หากยังผิดให้ดูว่าเกิดจากเลือกวิธีผิดหรือคำนวณผิด แล้วทำซ้ำหนึ่งรอบ</p>
+<h2 id="part-1">เส้นทาง 120 นาที</h2>
+<table>
+<thead>
+<tr>
+<th>เวลา</th>
+<th>เรียนอะไร</th>
+<th>เมื่อจบต้องทำได้</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0–10 นาที</td>
+<td>ตำแหน่ง มิติ ชนิด และการเท่ากัน</td>
+<td>แยกแถว–หลัก และอ่านสมาชิกได้</td>
+</tr>
+<tr>
+<td>10–22 นาที</td>
+<td>บวก ลบ คูณค่าคงตัว สลับเปลี่ยน</td>
+<td>คำนวณตรงตำแหน่งและทำ transpose ได้</td>
+</tr>
+<tr>
+<td>22–37 นาที</td>
+<td>คูณเมทริกซ์</td>
+<td>ตรวจมิติและใช้แถวคูณหลักได้</td>
+</tr>
+<tr>
+<td>37–55 นาที</td>
+<td>ดีเทอร์มิแนนต์และโคแฟกเตอร์</td>
+<td>หา det ขนาด 2×2, 3×3 และขยาย 4×4 ได้</td>
+</tr>
+<tr>
+<td>55–68 นาที</td>
+<td>อินเวอร์สและสมบัติ det</td>
+<td>เลือกสูตรลัดพร้อมเงื่อนไขได้</td>
+</tr>
+<tr>
+<td>68–82 นาที</td>
+<td>ระบบสมการและกฎคราเมอร์</td>
+<td>จัด AX=B และแทนหลักถูกได้</td>
+</tr>
+<tr>
+<td>82–100 นาที</td>
+<td>ตรรกศาสตร์และการอ้างเหตุผล</td>
+<td>ตรวจเหตุจริง–ผลเท็จได้</td>
+</tr>
+<tr>
+<td>100–108 นาที</td>
+<td>ตัวบ่งปริมาณ</td>
+<td>ใช้เอกภพ พยาน และตัวอย่างค้านได้</td>
+</tr>
+<tr>
+<td>108–120 นาที</td>
+<td>แบบทดสอบข้อ 1–10 และตรวจ</td>
+<td>ระบุเรื่องที่ยังต้องทบทวนได้</td>
+</tr>
+</tbody></table>
+<p>แบบฝึกข้อ 11–20 และเฉลยโจทย์จากภาพเป็นชุดเสริมหลัง 120 นาที ไม่จำเป็นต้องทำทุกข้อภายในรอบแรก</p>
+<p><strong>วิธีอ่านเมทริกซ์ที่เขียนในบรรทัดเดียว:</strong> [1,2;3,4] หมายถึงแถวแรกเป็น 1,2 และแถวที่สองเป็น 3,4 ใช้เครื่องหมาย ; เพื่อขึ้นแถวใหม่ในข้อความ</p>
+<h2 id="part-2">ช่วงที่ 1 • นาที 0–10 • เมทริกซ์คืออะไร</h2>
+<p>เมทริกซ์คือการจัดจำนวนเป็นตาราง แถวอยู่แนวนอน หลักอยู่แนวตั้ง เขียนมิติเป็น <strong>จำนวนแถว × จำนวนหลัก</strong> เสมอ</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="B=\begin{bmatrix}1&amp;3\\5&amp;4\\0&amp;6\end{bmatrix}"><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>5</mn></mrow></mtd><mtd><mrow><mn>4</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>6</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p>B มี 3 แถว 2 หลัก จึงมีมิติ 3×2 ส่วนสัญลักษณ์ bᵢⱼ หมายถึงสมาชิกแถวที่ i หลักที่ j เช่น b₂₁=5 และ b₃₂=6</p>
+<p>โจทย์ในภาพ 43667 ถาม b₁₂−2b₂₁+b₃₂ จึงแทนค่าเป็น 3−2(5)+6=−1 การเขียนตำแหน่งก่อนแทนค่าช่วยป้องกันการสลับแถวกับหลัก</p>
+<p><strong>ชนิดที่ต้องรู้</strong></p>
+<table>
+<thead>
+<tr>
+<th>ชนิด</th>
+<th>วิธีสังเกต</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>เมทริกซ์แถว</td>
+<td>มีแถวเดียว มิติ 1×n</td>
+</tr>
+<tr>
+<td>เมทริกซ์หลัก</td>
+<td>มีหลักเดียว มิติ m×1</td>
+</tr>
+<tr>
+<td>เมทริกซ์ศูนย์ O</td>
+<td>ทุกสมาชิกเป็น 0 มิติไม่จำเป็นต้องจัตุรัส</td>
+</tr>
+<tr>
+<td>เมทริกซ์จัตุรัส</td>
+<td>จำนวนแถวเท่ากับจำนวนหลัก</td>
+</tr>
+<tr>
+<td>เมทริกซ์เอกลักษณ์ I</td>
+<td>จัตุรัส แนวทแยงหลักเป็น 1 ที่เหลือเป็น 0</td>
+</tr>
+<tr>
+<td>เมทริกซ์สามเหลี่ยมบน</td>
+<td>จัตุรัส สมาชิกใต้แนวทแยงหลักเป็น 0 ทั้งหมด</td>
+</tr>
+<tr>
+<td>เมทริกซ์สามเหลี่ยมล่าง</td>
+<td>จัตุรัส สมาชิกเหนือแนวทแยงหลักเป็น 0 ทั้งหมด</td>
+</tr>
+<tr>
+<td>เมทริกซ์สมมาตร</td>
+<td>Aᵀ=A หรือ aᵢⱼ=aⱼᵢ</td>
+</tr>
+<tr>
+<td>เมทริกซ์เสมือนสมมาตร</td>
+<td>Aᵀ=−A หรือ aᵢⱼ=−aⱼᵢ; เมื่อสมาชิกเป็นจำนวนจริง แนวทแยงหลักเป็น 0</td>
+</tr>
+</tbody></table>
+<p>แนวทแยงหลักลากจากซ้ายบนไปขวาล่าง เช่น a₁₁,a₂₂,a₃₃ เมทริกซ์หนึ่งอาจเป็นได้หลายชนิด เช่น I₂ เป็นจัตุรัส สมมาตร และสามเหลี่ยมทั้งบนและล่าง</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="I_2=\begin{bmatrix}1&amp;0\\0&amp;1\end{bmatrix},\qquad S=\begin{bmatrix}2&amp;3\\3&amp;5\end{bmatrix},\qquad K=\begin{bmatrix}0&amp;4\\-4&amp;0\end{bmatrix}"><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>,</mo><mspace width="2em"/><mi>S</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mn>5</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>,</mo><mspace width="2em"/><mi>K</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>4</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>4</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p>S สมมาตรเพราะสมาชิกสะท้อนข้ามแนวทแยงเท่ากัน ส่วน K เสมือนสมมาตรเพราะสมาชิกคู่สะท้อนมีเครื่องหมายตรงข้ามกัน</p>
+<p><strong>การเท่ากันของเมทริกซ์</strong> ต้องมีมิติเท่ากัน และสมาชิกตำแหน่งเดียวกันเท่ากันทุกตำแหน่ง</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="\begin{bmatrix}y+3&amp;2\\3&amp;2x+1\end{bmatrix}=\begin{bmatrix}4&amp;2\\3&amp;-1\end{bmatrix}"><mrow><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mi>y</mi><mo>+</mo><mn>3</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>4</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p>เทียบช่องซ้ายบนได้ y+3=4 จึง y=1 เทียบช่องขวาล่างได้ 2x+1=−1 จึง x=−1 ไม่ต้องนำทุกสมาชิกมาบวกรวมกัน</p>
+<p><strong>สมาชิกที่กำหนดแบบแบ่งกรณี</strong> เช่น aᵢⱼ=2 เมื่อ i&lt;j และ aᵢⱼ=i+j เมื่อ i≥j ต้องตรวจเงื่อนไขก่อนแทนค่า เช่น a₂₄=2 เพราะ 2&lt;4 แต่ a₄₂=4+2=6 เพราะ 4≥2</p>
+<p><strong>ลองเอง:</strong> จาก B ด้านบน b₂₂ และ b₃₁ เท่ากับเท่าไร? เมทริกซ์เสมือนสมมาตร 2×2 ที่ช่องขวาบนเป็น −7 ต้องมีช่องซ้ายล่างเป็นอะไร?</p>
+<p>เฉลย: b₂₂=4, b₃₁=0 และช่องซ้ายล่างเป็น 7</p>
+<h2 id="part-3">ช่วงที่ 2 • นาที 10–22 • บวก ลบ คูณค่าคงตัว และ transpose</h2>
+<p><strong>บวกและลบได้เมื่อมิติเท่ากันเท่านั้น</strong> แล้วคำนวณสมาชิกตรงตำแหน่ง คูณค่าคงตัวคือคูณทุกช่อง</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="A=\begin{bmatrix}1&amp;-2\\3&amp;4\end{bmatrix},\qquad B=\begin{bmatrix}2&amp;5\\-1&amp;0\end{bmatrix}"><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>2</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mn>4</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>,</mo><mspace width="2em"/><mi>B</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>5</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="A+B=\begin{bmatrix}3&amp;3\\2&amp;4\end{bmatrix},\qquad A-B=\begin{bmatrix}-1&amp;-7\\4&amp;4\end{bmatrix}"><mrow><mi>A</mi><mo>+</mo><mi>B</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>4</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>,</mo><mspace width="2em"/><mi>A</mi><mo>−</mo><mi>B</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>7</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>4</mn></mrow></mtd><mtd><mrow><mn>4</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="2A=\begin{bmatrix}2&amp;-4\\6&amp;8\end{bmatrix},\qquad 2A-B=\begin{bmatrix}0&amp;-9\\7&amp;8\end{bmatrix}"><mrow><mn>2</mn><mi>A</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>4</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>6</mn></mrow></mtd><mtd><mrow><mn>8</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>,</mo><mspace width="2em"/><mn>2</mn><mi>A</mi><mo>−</mo><mi>B</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>9</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>7</mn></mrow></mtd><mtd><mrow><mn>8</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p>ช่องซ้ายล่างของ 2A−B คือ 2(3)−(−1)=7 ระวังว่าลบจำนวนลบจะกลายเป็นบวก</p>
+<p><strong>วงเล็บของการลบสำคัญมาก</strong></p>
+<ul>
+<li>(A−B)−C=A−B−C</li>
+<li>A−(B−C)=A−B+C</li>
+</ul>
+<p>สองนิพจน์นี้โดยทั่วไปไม่เท่ากัน เพราะนิพจน์หลังต้องกระจายเครื่องหมายลบเข้าไปในวงเล็บ</p>
+<p><strong>Transpose หรือเมทริกซ์สลับเปลี่ยน</strong> เขียน Aᵀ หรือ Aᵗ หมายถึงเปลี่ยนแถวเดิมเป็นหลักใหม่ โดยค่าของสมาชิกไม่เปลี่ยน</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="A=\begin{bmatrix}1&amp;2&amp;3\\4&amp;5&amp;6\end{bmatrix}\quad\Rightarrow\quad A^T=\begin{bmatrix}1&amp;4\\2&amp;5\\3&amp;6\end{bmatrix}"><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>4</mn></mrow></mtd><mtd><mrow><mn>5</mn></mrow></mtd><mtd><mrow><mn>6</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mspace width="1em"/><mo>⇒</mo><mspace width="1em"/><msup><mi>A</mi><mi>T</mi></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>4</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>5</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mn>6</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p>แถวแรก 1,2,3 กลายเป็นหลักแรก มิติเปลี่ยนจาก 2×3 เป็น 3×2 Transpose ไม่ใช่การกลับเครื่องหมาย และไม่ใช่อินเวอร์ส</p>
+<p><strong>สมบัติที่ใช้บ่อย</strong></p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="(A+B)^T=A^T+B^T,\qquad (A-B)^T=A^T-B^T"><mrow><mo>(</mo><mi>A</mi><mo>+</mo><mi>B</mi><msup><mo>)</mo><mi>T</mi></msup><mo>=</mo><msup><mi>A</mi><mi>T</mi></msup><mo>+</mo><msup><mi>B</mi><mi>T</mi></msup><mo>,</mo><mspace width="2em"/><mo>(</mo><mi>A</mi><mo>−</mo><mi>B</mi><msup><mo>)</mo><mi>T</mi></msup><mo>=</mo><msup><mi>A</mi><mi>T</mi></msup><mo>−</mo><msup><mi>B</mi><mi>T</mi></msup></mrow></math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="(kA)^T=kA^T,\qquad (A^T)^T=A"><mrow><mo>(</mo><mi>k</mi><mi>A</mi><msup><mo>)</mo><mi>T</mi></msup><mo>=</mo><mi>k</mi><msup><mi>A</mi><mi>T</mi></msup><mo>,</mo><mspace width="2em"/><mo>(</mo><msup><mi>A</mi><mi>T</mi></msup><msup><mo>)</mo><mi>T</mi></msup><mo>=</mo><mi>A</mi></mrow></math></div>
+<p>โจทย์จากภาพ 43685 ให้ −½A+3B=X+2C ให้แยก X ก่อนว่า X=−½A+3B−2C แล้วจึงคำนวณทีละตำแหน่ง อย่าเปลี่ยนเครื่องหมายของ 3B เพราะไม่ได้ย้ายข้าง</p>
+<p><strong>ลองเอง:</strong> ถ้า C มีมิติ 2×3 แล้ว Cᵀ มีมิติอะไร? ถ้า a₁₃=−5 สมาชิกตำแหน่งใดของ Cᵀ เป็น −5?</p>
+<p>เฉลย: 3×2 และตำแหน่งแถว 3 หลัก 1</p>
+<h2 id="part-4">ช่วงที่ 3 • นาที 22–37 • คูณเมทริกซ์</h2>
+<p><strong>ขั้นที่ 1 ตรวจมิติ:</strong> ถ้า A มีมิติ m×n และ B มีมิติ n×p จะคูณ AB ได้ และผลลัพธ์มีมิติ m×p</p>
+<p>จำว่า “เลขข้างในต้องเท่ากัน เลขข้างนอกเป็นขนาดคำตอบ” เช่น (2×3)(3×4) ให้ผล 2×4 แต่ (2×3)(2×4) คูณกันไม่ได้</p>
+<p><strong>ขั้นที่ 2 ใช้แถวของตัวหน้า คูณหลักของตัวหลัง:</strong> จับคู่คูณตามลำดับ แล้วบวกผลคูณทั้งหมด สมาชิก (AB)ᵢⱼ ใช้แถว i ของ A กับหลัก j ของ B</p>
+<p>ตัวอย่างจากภาพ 43672:</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="A=\begin{bmatrix}7&amp;5\\3&amp;2\end{bmatrix},\qquad B=\begin{bmatrix}-1&amp;2&amp;-3\\4&amp;-1&amp;0\end{bmatrix}"><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>7</mn></mrow></mtd><mtd><mrow><mn>5</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>,</mo><mspace width="2em"/><mi>B</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>4</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p>มิติ (2×2)(2×3) คูณได้ ผลเป็น 2×3 แล้วคำนวณ 6 ช่อง:</p>
+<table>
+<thead>
+<tr>
+<th>ช่อง</th>
+<th>แถวคูณหลัก</th>
+<th align="right">ค่า</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>(1,1)</td>
+<td>7(−1)+5(4)</td>
+<td align="right">13</td>
+</tr>
+<tr>
+<td>(1,2)</td>
+<td>7(2)+5(−1)</td>
+<td align="right">9</td>
+</tr>
+<tr>
+<td>(1,3)</td>
+<td>7(−3)+5(0)</td>
+<td align="right">−21</td>
+</tr>
+<tr>
+<td>(2,1)</td>
+<td>3(−1)+2(4)</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td>(2,2)</td>
+<td>3(2)+2(−1)</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td>(2,3)</td>
+<td>3(−3)+2(0)</td>
+<td align="right">−9</td>
+</tr>
+</tbody></table>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="AB=\begin{bmatrix}13&amp;9&amp;-21\\5&amp;4&amp;-9\end{bmatrix}"><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>13</mn></mrow></mtd><mtd><mrow><mn>9</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>21</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>5</mn></mrow></mtd><mtd><mrow><mn>4</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>9</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p><strong>จุดที่ต้องแยกจากการบวก:</strong> การคูณเมทริกซ์ไม่ได้คูณช่องตรงกัน และโดยทั่วไป AB≠BA ตัวอย่างข้างบน BA ยังทำไม่ได้ เพราะ (2×3)(2×2) มีมิติด้านในไม่เท่ากัน</p>
+<p>แม้คูณได้ทั้งสองลำดับ ผลก็อาจต่างกัน เช่น</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="P=\begin{bmatrix}1&amp;1\\0&amp;1\end{bmatrix},\quad Q=\begin{bmatrix}1&amp;0\\1&amp;1\end{bmatrix}"><mrow><mi>P</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>,</mo><mspace width="1em"/><mi>Q</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="PQ=\begin{bmatrix}2&amp;1\\1&amp;1\end{bmatrix},\quad QP=\begin{bmatrix}1&amp;1\\1&amp;2\end{bmatrix}"><mrow><mi>P</mi><mi>Q</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>,</mo><mspace width="1em"/><mi>Q</mi><mi>P</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p>สมบัติที่ใช้ได้เมื่อมิติสอดคล้องกัน: A(BC)=(AB)C, A(B+C)=AB+AC, (A+B)C=AC+BC และ AI=IA=A เมทริกซ์ A² หมายถึง AA จึงใช้กับเมทริกซ์จัตุรัสในบทนี้ และไม่ได้ยกกำลังสองแต่ละช่อง</p>
+<p>สมบัติเพิ่มเติม: (AB)ᵀ=BᵀAᵀ เมื่อ transpose ผลคูณต้องสลับลำดับ</p>
+<p><strong>ลองเอง:</strong></p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="\begin{bmatrix}1&amp;2&amp;3\\4&amp;0&amp;-1\end{bmatrix}\begin{bmatrix}1\\0\\2\end{bmatrix}=?"><mrow><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>4</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>2</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mo>?</mo></mrow></math></div>
+<p>เฉลย: แถวแรกได้ 1(1)+2(0)+3(2)=7 แถวที่สองได้ 4(1)+0(0)+(−1)(2)=2 ผลคือเมทริกซ์หลัก [7;2] มิติ 2×1</p>
+<h2 id="part-5">ช่วงที่ 4 • นาที 37–55 • ดีเทอร์มิแนนต์และโคแฟกเตอร์</h2>
+<p>ดีเทอร์มิแนนต์เขียน det(A) หรือ |A| เป็น <strong>จำนวนหนึ่งจำนวน</strong> ที่คำนวณจากเมทริกซ์จัตุรัส ไม่ใช่เมทริกซ์อีกตัว และเครื่องหมาย |A| ในบริบทนี้ไม่ได้หมายความว่าผลต้องเป็นบวก</p>
+<p><strong>ขนาด 2×2: คูณแนวทแยงหลัก ลบคูณแนวทแยงอีกด้าน</strong></p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="\det\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}=ad-bc"><mrow><mi mathvariant="normal">det</mi><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mi>a</mi></mrow></mtd><mtd><mrow><mi>b</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>c</mi></mrow></mtd><mtd><mrow><mi>d</mi></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mi>a</mi><mi>d</mi><mo>−</mo><mi>b</mi><mi>c</mi></mrow></math></div>
+<p>ตัวอย่าง:</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="\det\begin{bmatrix}2&amp;1\\3&amp;-1\end{bmatrix}=2(-1)-1(3)=-5"><mrow><mi mathvariant="normal">det</mi><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mn>2</mn><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo><mo>−</mo><mn>1</mn><mo>(</mo><mn>3</mn><mo>)</mo><mo>=</mo><mo>−</mo><mn>5</mn></mrow></math></div>
+<p><strong>ขนาด 3×3: ขยายตามแถวแรก</strong></p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="\det\begin{bmatrix}a&amp;b&amp;c\\d&amp;e&amp;f\\g&amp;h&amp;i\end{bmatrix}=a(ei-fh)-b(di-fg)+c(dh-eg)"><mrow><mi mathvariant="normal">det</mi><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mi>a</mi></mrow></mtd><mtd><mrow><mi>b</mi></mrow></mtd><mtd><mrow><mi>c</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>d</mi></mrow></mtd><mtd><mrow><mi>e</mi></mrow></mtd><mtd><mrow><mi>f</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>g</mi></mrow></mtd><mtd><mrow><mi>h</mi></mrow></mtd><mtd><mrow><mi>i</mi></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mi>a</mi><mo>(</mo><mi>e</mi><mi>i</mi><mo>−</mo><mi>f</mi><mi>h</mi><mo>)</mo><mo>−</mo><mi>b</mi><mo>(</mo><mi>d</mi><mi>i</mi><mo>−</mo><mi>f</mi><mi>g</mi><mo>)</mo><mo>+</mo><mi>c</mi><mo>(</mo><mi>d</mi><mi>h</mi><mo>−</mo><mi>e</mi><mi>g</mi><mo>)</mo></mrow></math></div>
+<p>สังเกตเครื่องหมายหน้าทั้งสามพจน์เป็น +,−,+ แล้วแต่ละวงเล็บเป็น det ขนาด 2×2</p>
+<p>ตัวอย่างที่เตรียมไว้ใช้แก้ระบบสมการ:</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="A=\begin{bmatrix}1&amp;1&amp;1\\0&amp;2&amp;-1\\2&amp;1&amp;-1\end{bmatrix}"><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="\det(A)=1[2(-1)-(-1)(1)]-1[0(-1)-(-1)(2)]+1[0(1)-2(2)]"><mrow><mi mathvariant="normal">det</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo><mn>1</mn><mo>[</mo><mn>2</mn><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo><mo>−</mo><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo><mo>(</mo><mn>1</mn><mo>)</mo><mo>]</mo><mo>−</mo><mn>1</mn><mo>[</mo><mn>0</mn><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo><mo>−</mo><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo><mo>(</mo><mn>2</mn><mo>)</mo><mo>]</mo><mo>+</mo><mn>1</mn><mo>[</mo><mn>0</mn><mo>(</mo><mn>1</mn><mo>)</mo><mo>−</mo><mn>2</mn><mo>(</mo><mn>2</mn><mo>)</mo><mo>]</mo></mrow></math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="=-1-2-4=-7"><mrow><mo>=</mo><mo>−</mo><mn>1</mn><mo>−</mo><mn>2</mn><mo>−</mo><mn>4</mn><mo>=</mo><mo>−</mo><mn>7</mn></mrow></math></div>
+<p><strong>วิธีซาร์รัส (Sarrus)</strong> เป็นอีกทางสำหรับ 3×3 เท่านั้น สูตรคือ aei+bfg+cdh−ceg−bdi−afh หากใช้วิธีเขียนสองหลักแรกซ้ำ ต้องเก็บเครื่องหมายลบของสมาชิกไว้ด้วย ห้ามนำวิธีลากทแยงนี้ไปใช้ตรง ๆ กับ 4×4</p>
+<p><strong>ไมเนอร์และโคแฟกเตอร์: ทำให้โจทย์ใหญ่ลดเป็นโจทย์เล็ก</strong></p>
+<ol>
+<li>Mᵢⱼ คือ det ของเมทริกซ์ที่ได้จากการตัดแถว i และหลัก j ออก</li>
+<li>Cᵢⱼ=(−1)ⁱ⁺ʲMᵢⱼ คือโคแฟกเตอร์ กล่าวคือเอาไมเนอร์มาคูณเครื่องหมายตามตำแหน่ง</li>
+<li>เลือกแถวหรือหลักหนึ่ง แล้วรวม “สมาชิก × โคแฟกเตอร์ของสมาชิกนั้น” ให้ครบทั้งแถวหรือหลัก</li>
+</ol>
+<p>ตารางเครื่องหมาย:</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="\begin{bmatrix}+&amp;-&amp;+&amp;-\\-&amp;+&amp;-&amp;+\\+&amp;-&amp;+&amp;-\\-&amp;+&amp;-&amp;+\end{bmatrix}"><mrow><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mo>+</mo></mrow></mtd><mtd><mrow><mo>−</mo></mrow></mtd><mtd><mrow><mo>+</mo></mrow></mtd><mtd><mrow><mo>−</mo></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo></mrow></mtd><mtd><mrow><mo>+</mo></mrow></mtd><mtd><mrow><mo>−</mo></mrow></mtd><mtd><mrow><mo>+</mo></mrow></mtd></mtr><mtr><mtd><mrow><mo>+</mo></mrow></mtd><mtd><mrow><mo>−</mo></mrow></mtd><mtd><mrow><mo>+</mo></mrow></mtd><mtd><mrow><mo>−</mo></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo></mrow></mtd><mtd><mrow><mo>+</mo></mrow></mtd><mtd><mrow><mo>−</mo></mrow></mtd><mtd><mrow><mo>+</mo></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p>ตัวอย่างข้างบน หากดูตำแหน่ง (1,2) จะตัดแถว 1 หลัก 2 เหลือ [0,−1;2,−1] จึง M₁₂=2 แต่ C₁₂=−2 ดังนั้นพจน์นี้คือ a₁₂C₁₂=1(−2)=−2 ไม่ใช่ +2</p>
+<p><strong>เลือกแถวหรือหลักที่มีศูนย์มากที่สุด</strong> เพราะสมาชิก 0 ทำให้พจน์นั้นหายไป</p>
+<p>ตัวอย่าง 4×4 จากภาพ 43675:</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="A=\begin{bmatrix}-1&amp;2&amp;0&amp;3\\5&amp;8&amp;1&amp;4\\-1&amp;-2&amp;3&amp;-4\\0&amp;2&amp;1&amp;1\end{bmatrix}"><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>5</mn></mrow></mtd><mtd><mrow><mn>8</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>4</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>2</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>4</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p>เลือกแถว 4 ซึ่งมี 0,2,1,1 เครื่องหมายของแถวนี้คือ −,+,−,+</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="M_{42}=\det\begin{bmatrix}-1&amp;0&amp;3\\5&amp;1&amp;4\\-1&amp;3&amp;-4\end{bmatrix}=(-1)(-16)+3(16)=64"><mrow><msub><mi>M</mi><mrow><mn>42</mn></mrow></msub><mo>=</mo><mi mathvariant="normal">det</mi><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>5</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>4</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>4</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo><mo>(</mo><mo>−</mo><mn>16</mn><mo>)</mo><mo>+</mo><mn>3</mn><mo>(</mo><mn>16</mn><mo>)</mo><mo>=</mo><mn>64</mn></mrow></math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="M_{43}=\det\begin{bmatrix}-1&amp;2&amp;3\\5&amp;8&amp;4\\-1&amp;-2&amp;-4\end{bmatrix}=24+32-6=50"><mrow><msub><mi>M</mi><mrow><mn>43</mn></mrow></msub><mo>=</mo><mi mathvariant="normal">det</mi><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>5</mn></mrow></mtd><mtd><mrow><mn>8</mn></mrow></mtd><mtd><mrow><mn>4</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>2</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>4</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mn>24</mn><mo>+</mo><mn>32</mn><mo>−</mo><mn>6</mn><mo>=</mo><mn>50</mn></mrow></math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="M_{44}=\det\begin{bmatrix}-1&amp;2&amp;0\\5&amp;8&amp;1\\-1&amp;-2&amp;3\end{bmatrix}=-26-32=-58"><mrow><msub><mi>M</mi><mrow><mn>44</mn></mrow></msub><mo>=</mo><mi mathvariant="normal">det</mi><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>5</mn></mrow></mtd><mtd><mrow><mn>8</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>2</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mo>−</mo><mn>26</mn><mo>−</mo><mn>32</mn><mo>=</mo><mo>−</mo><mn>58</mn></mrow></math></div>
+<p>จึง C₄₂=64, C₄₃=−50 และ C₄₄=−58 แล้ว</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="\det(A)=0C_{41}+2(64)+1(-50)+1(-58)=20"><mrow><mi mathvariant="normal">det</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo><mn>0</mn><msub><mi>C</mi><mrow><mn>41</mn></mrow></msub><mo>+</mo><mn>2</mn><mo>(</mo><mn>64</mn><mo>)</mo><mo>+</mo><mn>1</mn><mo>(</mo><mo>−</mo><mn>50</mn><mo>)</mo><mo>+</mo><mn>1</mn><mo>(</mo><mo>−</mo><mn>58</mn><mo>)</mo><mo>=</mo><mn>20</mn></mrow></math></div>
+<p>ไมเนอร์เองติดลบได้ เช่น M₄₄=−58 แม้เครื่องหมายโคแฟกเตอร์ตำแหน่งนั้นจะเป็นบวก คำว่า “เครื่องหมายบวก” หมายถึงคูณด้วย +1 ไม่ได้บังคับให้ค่าที่ได้เป็นบวก</p>
+<p><strong>ลองเอง:</strong> det([3,2;4,1]) เท่าไร? ถ้า M₂₃=7 แล้ว C₂₃ เท่าไร?</p>
+<p>เฉลย: 3(1)−2(4)=−5 และ C₂₃=(−1)⁵(7)=−7</p>
+<h2 id="part-6">ช่วงที่ 5 • นาที 55–68 • อินเวอร์สและสูตรลัด det</h2>
+<p>อินเวอร์ส A⁻¹ ทำหน้าที่ย้อนการคูณด้วย A โดย AA⁻¹=A⁻¹A=I สำหรับเมทริกซ์จัตุรัส <strong>มีอินเวอร์สก็ต่อเมื่อ det(A)≠0</strong></p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="A=\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}\quad\Rightarrow\quad A^{-1}=\frac{1}{ad-bc}\begin{bmatrix}d&amp;-b\\-c&amp;a\end{bmatrix}"><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mi>a</mi></mrow></mtd><mtd><mrow><mi>b</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>c</mi></mrow></mtd><mtd><mrow><mi>d</mi></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mspace width="1em"/><mo>⇒</mo><mspace width="1em"/><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mi>a</mi><mi>d</mi><mo>−</mo><mi>b</mi><mi>c</mi></mrow></mfrac><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mi>d</mi></mrow></mtd><mtd><mrow><mo>−</mo><mi>b</mi></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mi>c</mi></mrow></mtd><mtd><mrow><mi>a</mi></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p>จำเป็นลำดับ: <strong>หา det → เช็กไม่เป็นศูนย์ → สลับ a กับ d → เปลี่ยนเครื่องหมาย b และ c → หารทั้งเมทริกซ์ด้วย det</strong></p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="A=\begin{bmatrix}3&amp;2\\4&amp;1\end{bmatrix},\quad \det(A)=-5"><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>4</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>,</mo><mspace width="1em"/><mi mathvariant="normal">det</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo><mo>−</mo><mn>5</mn></mrow></math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="A^{-1}=\frac{1}{-5}\begin{bmatrix}1&amp;-2\\-4&amp;3\end{bmatrix}=\begin{bmatrix}-1/5&amp;2/5\\4/5&amp;-3/5\end{bmatrix}"><mrow><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mo>−</mo><mn>5</mn></mrow></mfrac><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>2</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>4</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mo>−</mo><mn>1</mn><mo>/</mo><mn>5</mn></mrow></mtd><mtd><mrow><mn>2</mn><mo>/</mo><mn>5</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>4</mn><mo>/</mo><mn>5</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>3</mn><mo>/</mo><mn>5</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p>ตรวจคำตอบด้วยการคูณ AA⁻¹: ช่อง (1,1) ได้ −3/5+8/5=1 ส่วนช่อง (1,2) ได้ 6/5−6/5=0 เมื่อทำครบจะได้ I₂</p>
+<p>ถ้า B=[6,2;3,1] จะได้ det(B)=6−6=0 จึงไม่มีอินเวอร์ส ห้ามแทน 1/0 ลงสูตร และ A⁻¹ ไม่ได้หมายถึงกลับเศษส่วนทุกสมาชิก</p>
+<p><strong>สมบัติ det สำหรับเมทริกซ์จัตุรัส n×n</strong></p>
+<table>
+<thead>
+<tr>
+<th>รูปแบบ</th>
+<th>ค่าที่ใช้แทน</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>det(Aᵀ)</td>
+<td>det(A)</td>
+</tr>
+<tr>
+<td>det(AB)</td>
+<td>det(A)det(B)</td>
+</tr>
+<tr>
+<td>det(Aᵐ), m เป็นจำนวนเต็มบวก</td>
+<td>[det(A)]ᵐ</td>
+</tr>
+<tr>
+<td>det(A⁻¹), เมื่อ A มีอินเวอร์ส</td>
+<td>1/det(A)</td>
+</tr>
+<tr>
+<td>det(kA)</td>
+<td>kⁿdet(A)</td>
+</tr>
+<tr>
+<td>det(Iₙ)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>เมทริกซ์สามเหลี่ยม</td>
+<td>ผลคูณสมาชิกแนวทแยงหลัก</td>
+</tr>
+<tr>
+<td>มีแถว/หลักศูนย์ทั้งแถว/หลัก</td>
+<td>0</td>
+</tr>
+<tr>
+<td>มีสองแถว/สองหลักเท่ากันหรือเป็นสัดส่วนกัน</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<p>กำลังลบ เช่น det(C⁻⁴)=[det(C)]⁻⁴=1/[det(C)]⁴ ใช้ได้เมื่อ C มีอินเวอร์ส</p>
+<p><strong>ทำไม det(kA) ต้องเป็น kⁿ?</strong> เพราะคูณทุกสมาชิกของ A เท่ากับคูณ k ให้ทุกแถว และมีทั้งหมด n แถว จึงมีตัวคูณ k เกิดขึ้น n ครั้ง ตัวอย่าง 2×2: det(2A)=4det(A) ส่วน 3×3: det(2A)=8det(A)</p>
+<p>สมบัติการเปลี่ยนแถวที่ช่วยลดงาน: สลับสองแถวทำให้ det เปลี่ยนเครื่องหมาย; คูณแถวเดียวด้วย k ทำให้ det คูณ k; นำ k เท่าของอีกแถวมาบวกแถวหนึ่งทำให้ det คงเดิม สมบัติเดียวกันใช้กับหลักได้</p>
+<p><strong>ห้ามแยก det ของผลบวกหรือผลลบโดยทั่วไป</strong> เช่น A=B=I₂ จะได้ det(A+B)=det(2I₂)=4 แต่ det(A)+det(B)=2 จึงไม่เท่ากัน ต้องบวกเมทริกซ์ก่อนแล้วค่อยหา det</p>
+<p>ตัวอย่างซับซ้อนจากภาพ 43677:</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="A=\begin{bmatrix}1&amp;4\\-2&amp;3\end{bmatrix},\quad \det(A)=11"><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>4</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>2</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>,</mo><mspace width="1em"/><mi mathvariant="normal">det</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo><mn>11</mn></mrow></math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="A+A^T=\begin{bmatrix}2&amp;2\\2&amp;6\end{bmatrix},\quad \det(A+A^T)=12-4=8"><mrow><mi>A</mi><mo>+</mo><msup><mi>A</mi><mi>T</mi></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>6</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>,</mo><mspace width="1em"/><mi mathvariant="normal">det</mi><mo>(</mo><mi>A</mi><mo>+</mo><msup><mi>A</mi><mi>T</mi></msup><mo>)</mo><mo>=</mo><mn>12</mn><mo>−</mo><mn>4</mn><mo>=</mo><mn>8</mn></mrow></math></div>
+<p>ต้องการ det(−3A²Aᵀ(A+Aᵀ)A⁻¹) เมทริกซ์มีขนาด 2×2 ตัวคูณ −3 จึงออกมาเป็น (−3)²=9</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="\det(-3A^2A^T(A+A^T)A^{-1})=9(11^2)(11)(8)\frac{1}{11}=8712"><mrow><mi mathvariant="normal">det</mi><mo>(</mo><mo>−</mo><mn>3</mn><msup><mi>A</mi><mn>2</mn></msup><msup><mi>A</mi><mi>T</mi></msup><mo>(</mo><mi>A</mi><mo>+</mo><msup><mi>A</mi><mi>T</mi></msup><mo>)</mo><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>)</mo><mo>=</mo><mn>9</mn><mo>(</mo><msup><mn>11</mn><mn>2</mn></msup><mo>)</mo><mo>(</mo><mn>11</mn><mo>)</mo><mo>(</mo><mn>8</mn><mo>)</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>11</mn></mrow></mfrac><mo>=</mo><mn>8712</mn></mrow></math></div>
+<p><strong>ลองเอง:</strong> A เป็น 3×3 และ det(A)=−2 จงหา det(2A), det(Aᵀ), det(A⁻¹)</p>
+<p>เฉลย: 2³(−2)=−16, −2 และ −½ ตามลำดับ</p>
+<h2 id="part-7">ช่วงที่ 6 • นาที 68–82 • ระบบสมการและกฎคราเมอร์</h2>
+<p>เริ่มจากจัดลำดับตัวแปรให้เหมือนกันทุกสมการ เช่น x,y,z ถ้าตัวแปรใดไม่มีให้ใส่สัมประสิทธิ์ 0 แล้วเขียน <strong>AX=B</strong> โดย A เก็บสัมประสิทธิ์ X เก็บตัวแปร และ B เก็บค่าทางขวา</p>
+<p>จากภาพ 43678:</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="x+y+z=2,\qquad 2y-z=3,\qquad 2x+y-z=0"><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi><mo>=</mo><mn>2</mn><mo>,</mo><mspace width="2em"/><mn>2</mn><mi>y</mi><mo>−</mo><mi>z</mi><mo>=</mo><mn>3</mn><mo>,</mo><mspace width="2em"/><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>−</mo><mi>z</mi><mo>=</mo><mn>0</mn></mrow></math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="\begin{bmatrix}1&amp;1&amp;1\\0&amp;2&amp;-1\\2&amp;1&amp;-1\end{bmatrix}\begin{bmatrix}x\\y\\z\end{bmatrix}=\begin{bmatrix}2\\3\\0\end{bmatrix}"><mrow><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mi>x</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>y</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>z</mi></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p><strong>คราเมอร์ใช้ได้เมื่อ det(A)≠0</strong> หลักการคือ ต้องการตัวแปรใดให้แทน “หลักของตัวแปรนั้น” ด้วย B จากนั้นนำ det ที่ได้หารด้วย det(A)</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="x=\frac{D_x}{D},\qquad y=\frac{D_y}{D},\qquad z=\frac{D_z}{D},\qquad D=\det(A)"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><msub><mi>D</mi><mi>x</mi></msub></mrow><mrow><mi>D</mi></mrow></mfrac><mo>,</mo><mspace width="2em"/><mi>y</mi><mo>=</mo><mfrac><mrow><msub><mi>D</mi><mi>y</mi></msub></mrow><mrow><mi>D</mi></mrow></mfrac><mo>,</mo><mspace width="2em"/><mi>z</mi><mo>=</mo><mfrac><mrow><msub><mi>D</mi><mi>z</mi></msub></mrow><mrow><mi>D</mi></mrow></mfrac><mo>,</mo><mspace width="2em"/><mi>D</mi><mo>=</mo><mi mathvariant="normal">det</mi><mo>(</mo><mi>A</mi><mo>)</mo></mrow></math></div>
+<p>เราได้ D=−7 จากช่วงที่ 4 แล้ว สร้างเมทริกซ์ใหม่โดยแทนทีละหลัก:</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="A_x=\begin{bmatrix}2&amp;1&amp;1\\3&amp;2&amp;-1\\0&amp;1&amp;-1\end{bmatrix},\quad A_y=\begin{bmatrix}1&amp;2&amp;1\\0&amp;3&amp;-1\\2&amp;0&amp;-1\end{bmatrix},\quad A_z=\begin{bmatrix}1&amp;1&amp;2\\0&amp;2&amp;3\\2&amp;1&amp;0\end{bmatrix}"><mrow><msub><mi>A</mi><mi>x</mi></msub><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>,</mo><mspace width="1em"/><msub><mi>A</mi><mi>y</mi></msub><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>,</mo><mspace width="1em"/><msub><mi>A</mi><mi>z</mi></msub><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p>คำนวณแต่ละ det ตามแถวแรก:</p>
+<ul>
+<li>Dₓ=2[−2+1]−1[−3−0]+1[3−0]=−2+3+3=4</li>
+<li>Dᵧ=1[−3−0]−2[0+2]+1[0−6]=−3−4−6=−13</li>
+<li>D𝓏=1[0−3]−1[0−6]+2[0−4]=−3+6−8=−5</li>
+</ul>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="x=-\frac47,\qquad y=\frac{13}{7},\qquad z=\frac57"><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mn>4</mn></mrow><mrow><mn>7</mn></mrow></mfrac><mo>,</mo><mspace width="2em"/><mi>y</mi><mo>=</mo><mfrac><mrow><mn>13</mn></mrow><mrow><mn>7</mn></mrow></mfrac><mo>,</mo><mspace width="2em"/><mi>z</mi><mo>=</mo><mfrac><mrow><mn>5</mn></mrow><mrow><mn>7</mn></mrow></mfrac></mrow></math></div>
+<p>ตรวจแทนกลับทั้งสามสมการ: (−4+13+5)/7=2, (26−5)/7=3 และ (−8+13−5)/7=0 ครบแล้วจึงมั่นใจว่าคำตอบถูก</p>
+<p><strong>ตัวอย่าง 2 ตัวแปรให้เห็นสูตรชัด</strong></p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="2x-y=-1,\qquad 3x+2y=16"><mrow><mn>2</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>,</mo><mspace width="2em"/><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>16</mn></mrow></math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="D=\det\begin{bmatrix}2&amp;-1\\3&amp;2\end{bmatrix}=7"><mrow><mi>D</mi><mo>=</mo><mi mathvariant="normal">det</mi><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mn>7</mn></mrow></math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="D_x=\det\begin{bmatrix}-1&amp;-1\\16&amp;2\end{bmatrix}=14,\qquad D_y=\det\begin{bmatrix}2&amp;-1\\3&amp;16\end{bmatrix}=35"><mrow><msub><mi>D</mi><mi>x</mi></msub><mo>=</mo><mi mathvariant="normal">det</mi><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>16</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mn>14</mn><mo>,</mo><mspace width="2em"/><msub><mi>D</mi><mi>y</mi></msub><mo>=</mo><mi mathvariant="normal">det</mi><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mn>16</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mn>35</mn></mrow></math></div>
+<p>ดังนั้น x=14/7=2, y=35/7=5 ซึ่งเป็นโจทย์เดียวกับการเท่ากันของเมทริกซ์หลักในภาพ 43668</p>
+<p>ถ้าใช้วิธีอินเวอร์สและ A มีอินเวอร์ส จะได้ X=A⁻¹B จากการคูณ A⁻¹ ทางซ้ายของ AX=B ไม่ใช่ X=BA⁻¹ เพราะลำดับการคูณมีผล</p>
+<p><strong>กรณี D=0:</strong> สูตรหารด้วย D ใช้ไม่ได้ และยังสรุปทันทีว่า “ไม่มีคำตอบ” ไม่ได้ ต้องตรวจต่อด้วยการกำจัดตัวแปร อาจไม่มีคำตอบหรือมีอนันต์คำตอบ เช่น x+y=1 กับ 2x+2y=3 ไม่มีคำตอบ แต่ x+y=1 กับ 2x+2y=2 มีอนันต์คำตอบ</p>
+<p><strong>ลองเอง:</strong> เวลาหา y ด้วยคราเมอร์ต้องแทนแถว 2 หรือหลัก 2? ถ้าไม่มีพจน์ x ในสมการ สัมประสิทธิ์ที่ต้องใส่คืออะไร?</p>
+<p>เฉลย: แทนหลัก 2 และใส่ 0</p>
+<h2 id="part-8">ช่วงที่ 7 • นาที 82–100 • ตรรกศาสตร์และการอ้างเหตุผล</h2>
+<p>ประพจน์คือข้อความที่ตัดสินได้ว่าเป็นจริงหรือเท็จ เช่น “2+3=5” เป็นจริง ส่วน “2+3=6” เป็นเท็จ ทั้งสองข้อความเป็นประพจน์ คำถามหรือคำสั่งไม่ใช่ประพจน์ ส่วน “x+3=5” ยังเป็นประโยคเปิดจนกว่าจะกำหนดค่า x หรือใช้ตัวบ่งปริมาณที่ผูกตัวแปรให้ครบ</p>
+<p>ให้ T=จริง และ F=เท็จ สัญลักษณ์หลักมีดังนี้:</p>
+<table>
+<thead>
+<tr>
+<th>รูป</th>
+<th>อ่าน</th>
+<th>เงื่อนไข</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>¬p หรือ ~p</td>
+<td>ไม่ p</td>
+<td>กลับจริงเป็นเท็จ กลับเท็จเป็นจริง</td>
+</tr>
+<tr>
+<td>p∧q</td>
+<td>p และ q</td>
+<td>จริงเมื่อทั้งคู่จริง</td>
+</tr>
+<tr>
+<td>p∨q</td>
+<td>p หรือ q</td>
+<td>เท็จเมื่อทั้งคู่เท็จ; รวมกรณีทั้งคู่จริงด้วย</td>
+</tr>
+<tr>
+<td>p→q</td>
+<td>ถ้า p แล้ว q</td>
+<td>เท็จเฉพาะ p จริง แต่ q เท็จ</td>
+</tr>
+<tr>
+<td>p↔q</td>
+<td>p ก็ต่อเมื่อ q</td>
+<td>จริงเมื่อทั้งคู่มีค่าความจริงเหมือนกัน</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>p</th>
+<th>q</th>
+<th>¬p</th>
+<th>p∧q</th>
+<th>p∨q</th>
+<th>p→q</th>
+<th>p↔q</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>T</td>
+<td>T</td>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+<tr>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+</tr>
+<tr>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>F</td>
+</tr>
+<tr>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</tbody></table>
+<p><strong>ประโยคเงื่อนไขจำช่องเดียวก่อน: จริง → เท็จ เป็นเท็จ</strong> อีกสามกรณีเป็นจริงทั้งหมด ตัวอย่าง “ถ้าสอบผ่านจะให้รางวัล” จะผิดเงื่อนไขเมื่อสอบผ่านแต่ไม่ให้รางวัล ส่วนกรณีสอบไม่ผ่าน ข้อความไม่ได้กำหนดว่าจะต้องให้หรือไม่ให้</p>
+<p>สมมูลที่ช่วยแก้โจทย์:</p>
+<ul>
+<li>p→q สมมูลกับ ¬p∨q</li>
+<li>p→q สมมูลกับ ¬q→¬p (แย้งสลับที่)</li>
+<li>¬(p∧q) สมมูลกับ ¬p∨¬q</li>
+<li>¬(p∨q) สมมูลกับ ¬p∧¬q</li>
+<li>¬(p→q) สมมูลกับ p∧¬q</li>
+</ul>
+<p><strong>การอ้างเหตุผลสมเหตุสมผลหมายถึง:</strong> เมื่อเหตุทุกข้อจริง ผลต้องจริงเสมอ การพบแค่กรณีหนึ่งที่เหตุจริงและผลจริงยังพิสูจน์ไม่พอ</p>
+<p><strong>วิธีตรวจแบบในชีต: พยายามหาเหตุจริงทุกข้อ แต่ผลเท็จ</strong></p>
+<ol>
+<li>สมมติผลเป็น F และเหตุทุกข้อเป็น T</li>
+<li>กระจายค่าความจริงกลับไปที่ประพจน์ย่อย โดยคงค่าของตัวแปรเดียวกันให้ตรงกันทุกตำแหน่ง</li>
+<li>ถ้าหาค่าที่สอดคล้องกันได้ครบ นั่นคือตัวอย่างค้าน จึงไม่สมเหตุสมผล</li>
+<li>ถ้าทุกทางทำให้ขัดแย้งจนเป็นไปไม่ได้ จึงสมเหตุสมผล หากมีหลายทางให้แยกกรณี อย่าสรุปจากทางที่ขัดแย้งเพียงทางเดียว</li>
+</ol>
+<p>หรือสร้างตารางความจริงครบทุกกรณี แล้วตรวจว่ามีแถวที่เหตุทุกข้อ T แต่ผล F หรือไม่ สำหรับ n ประพจน์ย่อยมี 2ⁿ แถว</p>
+<p><strong>กฎอนุมานที่ใช้ทำให้เร็วขึ้น</strong></p>
+<table>
+<thead>
+<tr>
+<th>เหตุที่มี</th>
+<th>ผลที่สรุปได้</th>
+<th>ชื่อที่อาจพบ</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>p→q และ p</td>
+<td>q</td>
+<td>Modus ponens</td>
+</tr>
+<tr>
+<td>p→q และ ¬q</td>
+<td>¬p</td>
+<td>Modus tollens</td>
+</tr>
+<tr>
+<td>p∨q และ ¬q</td>
+<td>p</td>
+<td>Disjunctive syllogism</td>
+</tr>
+<tr>
+<td>p→q และ q→r</td>
+<td>p→r</td>
+<td>ต่อเงื่อนไข</td>
+</tr>
+<tr>
+<td>p∧q</td>
+<td>p หรือแยกได้เป็น q</td>
+<td>แยก “และ”</td>
+</tr>
+<tr>
+<td>p</td>
+<td>p∨r</td>
+<td>เพิ่ม “หรือ”</td>
+</tr>
+</tbody></table>
+<p>สองรูปที่สรุปไม่ได้โดยทั่วไปคือ p→q,q จึง p และ p→q,¬p จึง ¬q ตัวอย่าง “ถ้าฝนตกถนนเปียก; ถนนเปียก” ยังสรุปไม่ได้ว่าฝนตก เพราะอาจมีคนรดน้ำ</p>
+<p><strong>ตัวอย่างสมเหตุสมผลจากภาพ 43681</strong></p>
+<p>เหตุ: p∨q และ ¬q ผล: p∨r</p>
+<p>เมื่อ q เป็น F แต่ p∨q ต้องเป็น T จึง p ต้องเป็น T เมื่อ p เป็น T แล้ว p∨r ย่อมเป็น T ไม่ว่า r จะเป็นอะไร จึงสมเหตุสมผล ตรงกับ “สมชายไปว่ายน้ำ หรือสมหญิงไปเล่นเทนนิส; สมหญิงไม่เล่นเทนนิส; ดังนั้นสมชายไปว่ายน้ำหรือไปตลาด”</p>
+<p><strong>ตัวอย่างสายยาวจากภาพ 43681</strong></p>
+<p>เหตุ p→q, ¬p→¬r, s→r และ ¬q ผล ¬s</p>
+<p>จาก ¬q และ p→q ได้ ¬p; จาก ¬p และ ¬p→¬r ได้ ¬r; จาก ¬r และ s→r ได้ ¬s จึงสมเหตุสมผล เขียนเป็นทางเดินค่าความจริงได้ว่า q=F → p=F → r=F → s=F</p>
+<p><strong>ตัวอย่างไม่สมเหตุสมผลจากภาพ 43680</strong></p>
+<p>เหตุ p→(q→¬r), q, r ผล p</p>
+<p>ลอง p=F,q=T,r=T จะได้ q→¬r คือ T→F ซึ่งเป็น F แต่เหตุแรกทั้งประโยคเป็น F→F จึงเป็น T เหตุ q และ r ก็เป็น T ขณะที่ผล p เป็น F พบตัวอย่างค้านแล้ว จึงไม่สมเหตุสมผล</p>
+<p><strong>ลองเอง:</strong> เหตุ p→q และ q ผล p สมเหตุสมผลหรือไม่? ให้ค่าที่แสดงเหตุจริงแต่ผลเท็จ</p>
+<p>เฉลย: ไม่สมเหตุสมผล เลือก p=F,q=T จะได้ F→T=T และ q=T แต่ p=F</p>
+<h2 id="part-9">ช่วงที่ 8 • นาที 100–108 • ตัวบ่งปริมาณ</h2>
+<p>เอกภพสัมพัทธ์ U หรือ μ คือเซตของค่าที่อนุญาตให้ตัวแปรใช้ คำตอบขึ้นกับเอกภพเสมอ เช่น ∃x(x²=2) จริงเมื่อ U เป็นจำนวนจริง แต่เท็จเมื่อ U เป็นจำนวนเต็ม</p>
+<table>
+<thead>
+<tr>
+<th>รูป</th>
+<th>ความหมาย</th>
+<th>จะพิสูจน์จริงอย่างไร</th>
+<th>จะพิสูจน์เท็จอย่างไร</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>∀x P(x)</td>
+<td>ทุกค่าใน U มีสมบัติ P</td>
+<td>ต้องแสดงว่าจริงทุกค่า</td>
+<td>หาค่าใน U ที่ทำให้เท็จเพียงค่าเดียว</td>
+</tr>
+<tr>
+<td>∃x P(x)</td>
+<td>มีอย่างน้อยหนึ่งค่าใน U ที่มีสมบัติ P</td>
+<td>หาค่าใน U ที่ทำให้จริงเพียงค่าเดียว</td>
+<td>แสดงว่าไม่มีค่าใดใน U ทำให้จริง</td>
+</tr>
+</tbody></table>
+<p>ค่าที่ทำให้ประโยค “มีบางค่า” จริง เรียกว่า <strong>พยาน</strong> ส่วนค่าที่หักล้างประโยค “ทุกค่า” เรียกว่า <strong>ตัวอย่างค้าน</strong> คำว่า “บางค่า” รวมกรณีที่จริงทุกค่าด้วย ไม่ได้แปลว่าต้องมีค่าอื่นที่เท็จ</p>
+<p><strong>ตัวอย่างจากภาพ 43684</strong></p>
+<ul>
+<li>∀x[x≥1], U={0,1,2,3,4} เป็นเท็จ เพราะ x=0 อยู่ใน U แต่ 0≥1 ไม่จริง</li>
+<li>∀x[x²≥0], U=ℤ เป็นจริง เพราะกำลังสองของจำนวนเต็มทุกจำนวนไม่ติดลบ</li>
+<li>∃x[x+3=4], U={2,3,4} เป็นเท็จ เพราะต้องใช้ x=1 ซึ่งไม่อยู่ใน U</li>
+<li>∃x[x²+2x+1=0], U={−1,0,1} เป็นจริง เพราะ (x+1)²=0 เมื่อ x=−1 และ −1 อยู่ใน U</li>
+<li>∀x[3x&gt;10], U={4,5,6} เป็นจริง เพราะได้ 12,15,18 ซึ่งมากกว่า 10 ทุกค่า</li>
+</ul>
+<p><strong>การปฏิเสธตัวบ่งปริมาณ</strong> เปลี่ยน ∀↔∃ และปฏิเสธข้อความด้านในด้วย:</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="\neg\forall x\,P(x)\equiv\exists x\,\neg P(x),\qquad \neg\exists x\,P(x)\equiv\forall x\,\neg P(x)"><mrow><mo>¬</mo><mo>∀</mo><mi>x</mi><mspace width="0.15em"/><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>≡</mo><mo>∃</mo><mi>x</mi><mspace width="0.15em"/><mo>¬</mo><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>,</mo><mspace width="2em"/><mo>¬</mo><mo>∃</mo><mi>x</mi><mspace width="0.15em"/><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>≡</mo><mo>∀</mo><mi>x</mi><mspace width="0.15em"/><mo>¬</mo><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math></div>
+<p>เช่น “ไม่ใช่ว่าทุกคนสอบผ่าน” หมายถึง “มีอย่างน้อยหนึ่งคนสอบไม่ผ่าน” และปฏิเสธ ∃x(x&gt;3) ได้ ∀x(x≤3) ต้องระวัง &gt; เปลี่ยนเป็น ≤ ไม่ใช่ &lt;</p>
+<p><strong>ลองเอง:</strong> เมื่อ U=ℝ ประโยค ∀x(x²&gt;0) จริงหรือเท็จ และ ∃x(x+6=18) จริงหรือเท็จ?</p>
+<p>เฉลย: ข้อแรกเท็จ มีตัวอย่างค้าน x=0; ข้อหลังจริง มีพยาน x=12</p>
+<h2 id="part-10">ช่วงที่ 9 • นาที 108–120 • แบบทดสอบปิดเฉลย ข้อ 1–10</h2>
+<p>ใช้ประมาณ 9 นาทีทำ และ 3 นาทีตรวจ ข้อละ 1 คะแนน ต้องตอบย่อยครบจึงได้คะแนนเต็ม หากยังทำไม่ทันให้จดข้อที่ติดไว้เพื่อกลับมาฝึก อย่าข้ามการตรวจวิธีคิด</p>
+<p><strong>1.</strong> กำหนด M=[2,−1,4;0,3,5] จงบอกมิติของ M และค่า m₂₃</p>
+<p><strong>2.</strong> ถ้า [x+y,x−y]=[10,2] จงหา x,y</p>
+<p><strong>3.</strong> กำหนด A=[1,−2;3,0], B=[2,1;−1,4] จงหา 2A−B</p>
+<p><strong>4.</strong> จงหา transpose ของ [1,0,−2;3,4,5]</p>
+<p><strong>5.</strong> จงหา [2,1;−1,3][4;2]</p>
+<p><strong>6.</strong> จงหา det([3,2;1,4]) และบอกว่าเมทริกซ์นี้มีอินเวอร์สหรือไม่</p>
+<p><strong>7.</strong> A เป็น 3×3 และ det(A)=2 จงหา det(−2A)</p>
+<p><strong>8.</strong> จงแก้ระบบ x+y=5, 2x−y=1</p>
+<p><strong>9.</strong> เหตุ p→q และ ¬q ผล ¬p สมเหตุสมผลหรือไม่? ให้เหตุผลหนึ่งประโยค</p>
+<p><strong>10.</strong> ∃x[x+3=4], U={2,3,4} จริงหรือเท็จ? เพราะอะไร?</p>
+<p><strong>อ่านคะแนนเป็นแผนทบทวน:</strong> 8–10 คะแนนให้ไปชุดเสริม; 5–7 คะแนนย้อนช่วงของข้อที่ผิดแล้วทำซ้ำ; 0–4 คะแนนควรแบ่งเรียนเป็นช่วงสั้นเพิ่ม โดยเริ่มช่วง 1–3 ก่อน คะแนนนี้วัดเฉพาะโจทย์พื้นฐาน ยังไม่แทนการวัดความคล่องเรื่อง 4×4 หรือคราเมอร์ 3 ตัวแปร</p>
+<h2 id="part-11">แบบฝึกเสริม ข้อ 11–20 • หลังรอบ 120 นาที</h2>
+<p><strong>11.</strong> จงบอกว่า [0,−3;3,0] เป็นสมมาตร เสมือนสมมาตร หรือไม่ใช่ทั้งสองแบบ และอธิบายด้วย transpose</p>
+<p><strong>12.</strong> กำหนด A=[aᵢⱼ] ขนาด 3×3 โดย aᵢⱼ=2 เมื่อ i&lt;j และ aᵢⱼ=i+j เมื่อ i≥j จงเขียน A</p>
+<p><strong>13.</strong> กำหนด A=[1,2;0,1], B=[2,0;1,3] จงหา AB และ BA</p>
+<p><strong>14.</strong> จงหา det([1,2,0;0,3,1;2,0,1]) ด้วยการขยายโคแฟกเตอร์</p>
+<p><strong>15.</strong> จงหาอินเวอร์สของ A=[2,1;5,3] แล้วตรวจ AA⁻¹</p>
+<p><strong>16.</strong> A,B เป็น 2×2 โดย det(A)=−2, det(B)=3 จงหา det(3A²B⁻¹)</p>
+<p><strong>17.</strong> ใช้คราเมอร์แก้ระบบ 2x+y=7, x−y=2</p>
+<p><strong>18.</strong> เหตุ p∨q และ ¬p ผล q สมเหตุสมผลหรือไม่? พิสูจน์โดยสมมติเหตุจริงและผลเท็จ</p>
+<p><strong>19.</strong> เหตุ p→q และ q ผล p สมเหตุสมผลหรือไม่? ถ้าไม่ ให้ตัวอย่างค้านของค่าความจริง</p>
+<p><strong>20.</strong> ให้ U=ℤ จงตัดสินค่าความจริงและให้เหตุผลของ (ก) ∀x(x²≥x) (ข) ∃x(x²=2) และ (ค) เขียนปฏิเสธของ ∀x(x²≥x)</p>
+<details class="answers" id="part-12"><summary>เฉลยแบบฝึกใหม่ • เปิดหลังลองทำ</summary>
+<p><strong>1.</strong> มี 2 แถว 3 หลัก มิติ 2×3 และ m₂₃=5</p>
+<p><strong>2.</strong> ได้ x+y=10 และ x−y=2 บวกสมการได้ 2x=12 จึง x=6 แล้ว y=4</p>
+<p><strong>3.</strong> คูณ 2 ทุกช่องของ A ก่อน ได้ [2,−4;6,0] แล้วลบ B ได้ <strong>[0,−5;7,−4]</strong> ช่องซ้ายล่างคือ 6−(−1)=7</p>
+<p><strong>4.</strong> เปลี่ยนแถวเดิมเป็นหลักใหม่ ได้ <strong>[1,3;0,4;−2,5]</strong> มิติ 3×2</p>
+<p><strong>5.</strong> แถวแรกได้ 2(4)+1(2)=10 แถวที่สองได้ (−1)(4)+3(2)=2 ตอบ <strong>[10;2]</strong></p>
+<p><strong>6.</strong> det=3(4)−2(1)=10 ซึ่งไม่เป็นศูนย์ จึงมีอินเวอร์ส</p>
+<p><strong>7.</strong> ใช้ det(kA)=kⁿdet(A), n=3 จึง (−2)³(2)=<strong>−16</strong> ถ้าตอบ 8 หรือ −4 ให้ย้อนเรื่องเลขชี้กำลังของตัวคูณ</p>
+<p><strong>8.</strong> บวกสองสมการได้ 3x=6 จึง x=2 และ y=3 ตรวจ 2+3=5 และ 4−3=1</p>
+<p><strong>9.</strong> สมเหตุสมผล เพราะเมื่อ q เป็นเท็จแต่ p→q เป็นจริง p ต้องเป็นเท็จ จึง ¬p จริง เป็นกฎ Modus tollens</p>
+<p><strong>10.</strong> เท็จ สมการบังคับ x=1 แต่ 1 ไม่อยู่ใน U จึงไม่มีพยานในเอกภพที่กำหนด</p>
+<p><strong>11.</strong> เสมือนสมมาตร เพราะ Aᵀ=[0,3;−3,0]=−A และ Aᵀ≠A จึงไม่สมมาตร</p>
+<p><strong>12.</strong> เหนือทแยงใส่ 2 บนและใต้ทแยงใส่ i+j ได้</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="A=\begin{bmatrix}2&amp;2&amp;2\\3&amp;4&amp;2\\4&amp;5&amp;6\end{bmatrix}"><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mn>4</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>4</mn></mrow></mtd><mtd><mrow><mn>5</mn></mrow></mtd><mtd><mrow><mn>6</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p><strong>13.</strong> คำนวณแถวคูณหลักตามลำดับ:</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="AB=\begin{bmatrix}1(2)+2(1)&amp;1(0)+2(3)\\0(2)+1(1)&amp;0(0)+1(3)\end{bmatrix}=\begin{bmatrix}4&amp;6\\1&amp;3\end{bmatrix}"><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>1</mn><mo>(</mo><mn>2</mn><mo>)</mo><mo>+</mo><mn>2</mn><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mtd><mtd><mrow><mn>1</mn><mo>(</mo><mn>0</mn><mo>)</mo><mo>+</mo><mn>2</mn><mo>(</mo><mn>3</mn><mo>)</mo></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn><mo>(</mo><mn>2</mn><mo>)</mo><mo>+</mo><mn>1</mn><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mtd><mtd><mrow><mn>0</mn><mo>(</mo><mn>0</mn><mo>)</mo><mo>+</mo><mn>1</mn><mo>(</mo><mn>3</mn><mo>)</mo></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>4</mn></mrow></mtd><mtd><mrow><mn>6</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="BA=\begin{bmatrix}2(1)+0(0)&amp;2(2)+0(1)\\1(1)+3(0)&amp;1(2)+3(1)\end{bmatrix}=\begin{bmatrix}2&amp;4\\1&amp;5\end{bmatrix}"><mrow><mi>B</mi><mi>A</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn><mo>(</mo><mn>1</mn><mo>)</mo><mo>+</mo><mn>0</mn><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mtd><mtd><mrow><mn>2</mn><mo>(</mo><mn>2</mn><mo>)</mo><mo>+</mo><mn>0</mn><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mtd></mtr><mtr><mtd><mrow><mn>1</mn><mo>(</mo><mn>1</mn><mo>)</mo><mo>+</mo><mn>3</mn><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mtd><mtd><mrow><mn>1</mn><mo>(</mo><mn>2</mn><mo>)</mo><mo>+</mo><mn>3</mn><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>4</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>5</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math></div>
+<p>จึง AB≠BA แม้ทั้งสองผลคูณนิยามได้</p>
+<p><strong>14.</strong> ขยายแถวแรกได้ 1[3(1)−1(0)]−2[0(1)−1(2)]+0=3−2(−2)=<strong>7</strong></p>
+<p><strong>15.</strong> det(A)=2(3)−1(5)=1 จึง A⁻¹=[3,−1;−5,2] ตรวจคูณได้ [6−5,−2+2;15−15,−5+6]=[1,0;0,1]=I₂</p>
+<p><strong>16.</strong> B มีอินเวอร์สเพราะ det(B)=3≠0 ตัวคูณ 3 ออกมาเป็น 3² เพราะขนาด 2×2 จึง det(3A²B⁻¹)=3²(−2)²(1/3)=<strong>12</strong></p>
+<p><strong>17.</strong></p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="D=\det\begin{bmatrix}2&amp;1\\1&amp;-1\end{bmatrix}=-3,\quad D_x=\det\begin{bmatrix}7&amp;1\\2&amp;-1\end{bmatrix}=-9,\quad D_y=\det\begin{bmatrix}2&amp;7\\1&amp;2\end{bmatrix}=-3"><mrow><mi>D</mi><mo>=</mo><mi mathvariant="normal">det</mi><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mo>−</mo><mn>3</mn><mo>,</mo><mspace width="1em"/><msub><mi>D</mi><mi>x</mi></msub><mo>=</mo><mi mathvariant="normal">det</mi><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>7</mn></mrow></mtd><mtd><mrow><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mo>−</mo><mn>9</mn><mo>,</mo><mspace width="1em"/><msub><mi>D</mi><mi>y</mi></msub><mo>=</mo><mi mathvariant="normal">det</mi><mrow><mo stretchy="true">[</mo><mtable columnspacing="0.8em" rowspacing="0.25em"><mtr><mtd><mrow><mn>2</mn></mrow></mtd><mtd><mrow><mn>7</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><mn>2</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mo>−</mo><mn>3</mn></mrow></math></div>
+<p>ดังนั้น x=(−9)/(−3)=3 และ y=(−3)/(−3)=1 ตรวจ 6+1=7 และ 3−1=2</p>
+<p><strong>18.</strong> สมมติผล q เป็น F เหตุ ¬p เป็น T จึง p=F แต่ p∨q กลายเป็น F∨F=F ขัดกับเหตุที่ต้องจริง จึงเป็นไปไม่ได้ที่จะมีเหตุจริงทุกข้อและผลเท็จ การอ้างเหตุผลนี้สมเหตุสมผล</p>
+<p><strong>19.</strong> ไม่สมเหตุสมผล ให้ p=F,q=T จะได้ p→q=F→T=T และ q=T แต่ผล p=F</p>
+<p><strong>20.</strong> (ก) จริง เพราะจำนวนเต็มทุกตัวอยู่ในกรณี x≤0 หรือ x≥1 เมื่อ x≤0 จะมี x²≥0≥x; เมื่อ x≥1 จะมี x²−x=x(x−1)≥0 จึง x²≥x ทุกกรณี (ข) เท็จ เพราะไม่มีจำนวนเต็มใดยกกำลังสองได้ 2 จำนวนเต็มที่ค่าสัมบูรณ์ไม่เกิน 1 มีกำลังสองไม่เกิน 1 ส่วนที่ค่าสัมบูรณ์ตั้งแต่ 2 มีกำลังสองตั้งแต่ 4 (ค) ปฏิเสธคือ <strong>∃x(x²&lt;x)</strong> โดยยังใช้เอกภพ ℤ เหมือนเดิม</p>
+</details><h2 id="part-13">แผ่นจำก่อนทำข้อสอบ</h2>
+<table>
+<thead>
+<tr>
+<th>เจอโจทย์แบบนี้</th>
+<th>เริ่มตรงนี้</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ถาม aᵢⱼ</td>
+<td>แถว i หลัก j</td>
+</tr>
+<tr>
+<td>เทียบเมทริกซ์เท่ากัน</td>
+<td>ตั้งสมการจากช่องเดียวกัน</td>
+</tr>
+<tr>
+<td>บวก–ลบ</td>
+<td>ตรวจมิติเท่ากัน แล้วคำนวณตรงช่อง</td>
+</tr>
+<tr>
+<td>คูณ AB</td>
+<td>ตรวจมิติด้านใน แล้วแถวของ A คูณหลักของ B</td>
+</tr>
+<tr>
+<td>Aᵀ</td>
+<td>แถวเป็นหลัก</td>
+</tr>
+<tr>
+<td>det 2×2</td>
+<td>ad−bc</td>
+</tr>
+<tr>
+<td>det 3×3</td>
+<td>+aM₁₁−bM₁₂+cM₁₃ หรือซาร์รัส</td>
+</tr>
+<tr>
+<td>det 4×4</td>
+<td>เลือกแถว/หลักศูนย์มาก แล้วขยายโคแฟกเตอร์</td>
+</tr>
+<tr>
+<td>A⁻¹</td>
+<td>ตรวจ det≠0 ก่อน</td>
+</tr>
+<tr>
+<td>det ของผลคูณ</td>
+<td>แยกเป็นผลคูณ det</td>
+</tr>
+<tr>
+<td>det ของผลบวก/ลบ</td>
+<td>คำนวณ A±B ก่อน</td>
+</tr>
+<tr>
+<td>det(kA), A ขนาด n×n</td>
+<td>kⁿdet(A)</td>
+</tr>
+<tr>
+<td>คราเมอร์</td>
+<td>แทนหลักของตัวแปรด้วยค่าคงตัว แล้วหาร det เดิม</td>
+</tr>
+<tr>
+<td>อ้างเหตุผล</td>
+<td>หาเหตุจริงทุกข้อ–ผลเท็จ; พบได้แปลว่าไม่สมเหตุสมผล</td>
+</tr>
+<tr>
+<td>∀</td>
+<td>ตรวจทุกค่า หรือหาตัวอย่างค้านหนึ่งค่า</td>
+</tr>
+<tr>
+<td>∃</td>
+<td>หาพยานหนึ่งค่าในเอกภพ</td>
+</tr>
+</tbody></table>
+<p><strong>สิ่งที่ต้องระวังเป็นพิเศษจากภาพ:</strong> ผลบวกใน 43670 ช่องล่างขวาคือ 16; det(A−B) ใน 43674 คือ 9; ตรรกศาสตร์ตัวอย่าง 1 ใน 43680 ตอบตัวเลือก 3 ดูเหตุผลและเฉลยโจทย์จากภาพในไฟล์ “เฉลยโจทย์จากภาพ”</p>
+</main><footer>จัดทำจากภาพประกอบที่ส่งมา • คำนวณคำตอบใหม่ • เปิดอ่านได้โดยไม่ต้องเชื่อมต่ออินเทอร์เน็ต</footer></body></html>
